@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+html , body {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.back {
+    width: 100%;
+    height: 100vh;
+}
+
+.back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    pointer-events: none;
+}
+
+.workspace {
+    position: relative;
+    width: 85%;
+    max-width: 1600px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.nav {
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    pointer-events: all;
+    mix-blend-mode: difference;
+}
+
+.nav .nleft {
+    display: flex;
+    align-items: center;
+}
+
+.nav .nleft .pic {
+    width: 80px;
+    height: 40px;
+}
+
+.nav .nleft img {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -40%);
+}
+
+.hero .hleft {
+    min-width: 50%;
+}
+
+.hero .hleft .container {
+    height: 8vw;
+    overflow: hidden;
+    margin-bottom: 0.5vw;
+    position: relative;
+}
+
+.hero .hleft .container h1:nth-child(1) {
+    top: 0;
+}
+
+.hero .hleft .container h1 {
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    font-family: "Kajiro";
+    font-weight: 100;
+    font-size: 10vw;
+    letter-spacing: .2vw;
+    line-height: .9;
+}
+
+.hero .hleft button {
+    margin-top: 3vw;
+    padding: 1vw 3vw;
+    font-family: "Kajiro";
+    font-size: 3.5vw;
+    letter-spacing: .2vw;
+    font-weight: 100;
+    border-radius: 12px;
+    color: #000;
+    pointer-events: all;
+    border: none;
+}
+
+.hero .hright {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.hero .hright p {
+    font-size: 12px;
+    margin-bottom: 2vw;
+    font-weight: 300;
+}
+
+.hero .hright p:nth-child(3) {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.hero .hright .img-container {
+    overflow: hidden;
+    width: 100%;
+    height: 120px;
+    position: relative;
+}
+
+.hero .hright .img-container img:nth-child(1) {
+    top: 0;
+}
+
+.hero .hright .img-container img {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
